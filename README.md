@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-USXvaCDIL)
+- Live Site URL: (https://modest-bohr-8935e7.netlify.app/)
 
 ## My process
 
@@ -66,7 +66,6 @@ To see how you can add code snippets, see below:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@thekelvincode](https://www.frontendmentor.io/profile/theKelvincode)
+- Twitter - [@kelviniseh](https://www.twitter.com/kelvinsage)
 
