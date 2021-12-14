@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Global styling */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-color: #0f1424;
+  font-family: 'Rubik','Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: 300, 400, 500;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/** styling for container **/
+.container {
+  max-width: 375px;
+  margin: 50px auto;
+}
+
+.mainCard {
+  border-radius: 15px;
+  background-color: #1c1f4a;
+  margin-bottom: 25px;
+}
+
+.reportHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5847eb;
+  border-radius: 15px;
+  padding: 25px 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reportHeading img {
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 15px;
+}
+
+.reportHeading .reportName {
+  font-size: 18px;
+  font-weight: 100;
+  margin-right: 15px;
+}
+
+.reportHeading .reportP {
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.reportHeading .nameText {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.timeInterval div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.timeInterval div .btn {
+  opacity: 0.3;
+}
+
+.timeInterval div .btn:hover {
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.timeInterval div .active {
+  opacity: 1.0;
+}
+
+.cardBackground {
+  background-repeat: no-repeat;
+  background-position-x: 240px;
+  background-position-y: -5px;
+  background-size: 55px;
+  border-radius: 20px 20px 28px 28px;
+  padding-top: 35px;
+  margin-bottom: 25px;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 25px;
+  background-color: #1c1f4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.card:hover {
+  background-color: #6f76c8;
+  cursor: pointer;
+}
+
+.timeHrs h4 {
+  font-weight: 500;
+}
+
+.timeHrs p {
+  font-size: 25px;
+}
+
+.prevHrs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prevHrs img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 5px 0 20px auto;
+  width: 30px;
+  cursor: pointer;
+}
+
+.prevHrs p {
+  opacity: 0.5;
+}
+
+.workReport {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-work.svg");
+}
+
+.playReport {
+  background-color: #56c2e6;
+  background-image: url("/images/icon-play.svg");
+}
+
+.studyReport {
+  background-color: #ff5c7c;
+  background-image: url("/images/icon-study.svg");
+}
+
+.exerciseReport {
+  background-color: #4acf81;
+  background-image: url("/images/icon-exercise.svg");
+}
+
+.socialReport {
+  background-color: #7536d3;
+  background-image: url("/images/icon-social.svg");
+}
+
+.selfCareReport {
+  background-color: #f1c65b;
+  background-image: url("/images/icon-self-care.svg");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    height: 100vh;
+    position: relative;
+  }
+  .container {
+    max-width: 992px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+  .mainCard {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .mainCard .reportHeading .reportName {
+    margin: 40px auto;
+  }
+  .mainCard .reportHeading .reportName .nameText {
+    font-size: 35px;
+  }
+  .reportHeading {
+    padding-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainCard .timeInterval div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainCard .timeInterval .btn {
+    padding: 10px 0;
+    display: inline;
+  }
+  .cardBackground {
+    background-repeat: no-repeat;
+    background-position-x: 155px;
+    background-position-y: -5px;
+    border-radius: 20px 20px 28px 28px;
+    padding-top: 35px;
+  }
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .timeHrs p {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 25px auto 0 auto;
+  }
+  .card .prevHrs img {
+    position: absolute;
+    top: 28px;
+    right: 25px;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 620px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
